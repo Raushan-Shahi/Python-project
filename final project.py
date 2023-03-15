@@ -1,6 +1,6 @@
 #part 1
 
-# Here are all the installs and imports you will need for your word cloud script and uploader widget
+# Here are all the installs and imports you will need for my word cloud script and uploader widget
 
 !pip install wordcloud
 !pip install fileupload
@@ -40,7 +40,7 @@ _upload()
 #part 3
 
 def calculate_frequencies(file_contents):
-    # Here is a list of punctuations and uninteresting words you can use to process your text
+    # Here is a list of punctuations and uninteresting words we can use to process our text
     punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
     uninteresting_words = ["the", "a", "to", "if", "is", "it", "of", "and", "or", "an", "as", "i", "me", "my", \
     "we", "our", "ours", "you", "your", "yours", "he", "she", "him", "his", "her", "hers", "its", "they", "them", \
@@ -48,7 +48,7 @@ def calculate_frequencies(file_contents):
     "have", "has", "had", "do", "does", "did", "but", "at", "by", "with", "from", "here", "when", "where", "how", \
     "all", "any", "both", "each", "few", "more", "some", "such", "no", "nor", "too", "very", "can", "will", "just"]
     
-    # LEARNER CODE START HERE
+    # CODE START HERE
     result = {}
     a = file_contents.split()
     for word in a:
@@ -70,7 +70,7 @@ def calculate_frequencies(file_contents):
 
 #part 4
 
-# Display your wordcloud image
+# Display our wordcloud image
 
 myimage = calculate_frequencies(file_contents)
 plt.imshow(myimage, interpolation = 'nearest')
